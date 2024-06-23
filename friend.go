@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func (c *Client) GetFrinds() ([]Friend, error) {
+func (c *Client) GetFriends() ([]Friend, error) {
 	req, err := http.NewRequest("GET", fmt.Sprintf("%s/friends", c.HostURL), nil)
 	if err != nil {
 		return nil, err
