@@ -1,5 +1,14 @@
 package hashicups
 
+// Friend -
+type Friend struct {
+	ID          int                `json:"id"`
+	Name        string             `json:"name"`
+	Address     string             `json:"address"`
+	Description string             `json:"description"`
+	Image       string             `json:"image"`
+}
+
 // Order -
 type Order struct {
 	ID    int         `json:"id,omitempty"`
