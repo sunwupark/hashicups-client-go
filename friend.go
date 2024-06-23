@@ -98,7 +98,7 @@ func (c *Client) UpdateFriend(friendID string, friends []Friend) (*Friend, error
 	return &friend, nil
 }
 
-func (c *Client) DeleteCafe(friendID string) error {
+func (c *Client) DeleteFriend(friendID string) error {
 	req, err := http.NewRequest("DELETE", fmt.Sprintf("%s/friends/%s", c.HostURL, friendID), nil)
 	if err != nil {
 		return err
